@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="app.js" defer></script>
+    <script src="ingredientes.js" defer></script>
+    <script src="categoria.js" defer></script>
+    <script src="area.js" defer></script>
+    <script src="name.js" defer></script>
+</head>
+<body class="bodyPrincipal">
+    <header>
+        <h1 class="tituloPrincipal">
+            Buscador de Comidas
+        </h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="searchContainer">
+                <label class="labelInput">
+                    <input id="searchInput" type="text" placeholder="Buscar por Nombre del Plato" spellcheck="false">
+                </label>
+                <button class="searchButton" onclick="realizarBusquedaPorNombre()"><img src="lupa.png" alt="logo de busqueda"></button>
+            </div>
+            <div class="searchOptionsContainer">
+                <button class="dropButton">Buscar por Nombre del Plato</button>
+                <div class="searchOptions">
+                    <a href="#" onclick="changePlaceholderAndFunction('Nombre del Plato')">Nombre del Plato</a>
+                    <a href="#" onclick="changePlaceholderAndFunction('Categoría')">Categoría</a>
+                    <a href="#" onclick="changePlaceholderAndFunction('Ingrediente Principal')">Ingrediente Principal</a>
+                    <a href="#" onclick="changePlaceholderAndFunction('Área')">Área</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

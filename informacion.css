@@ -1,0 +1,72 @@
+.contenedorMain {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.logoSection, .informacionSection {
+    width: 50%;
+    height: 700px;
+}
+
+.imagenReferencia {
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.informacionSection {
+    overflow: auto;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.listaIngredientesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informacionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nombrePlato, .tituloIngredientes, .tituloReceta {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    gap: 20px;
+}
+
+.ingrediente, .pasoReceta {
+    font-size: 25px;
+}
+
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.homeContainer:hover {
+    text-decoration: underline;
+}
+
+.logoTituloSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

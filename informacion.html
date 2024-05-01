@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Información del Plato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="informacion.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="informacion.js" defer></script>
+</head>
+<body>
+<header class="headerPrincipal">
+    <div class="headerSection">
+        <section class="logoTituloSection">
+            <h1 class="tituloPrincipal">
+                Información del Plato
+            </h1>
+            <a class="homeContainer" href="index.html">
+                Home
+            </a>
+        </section>
+    </div>
+</header>
+<main>
+    <div class="contenedorMain">
+        <section class="logoSection">
+            <div class="logoContainer">
+            </div>
+        </section>
+        <section class="informacionSection">
+            <div class="informacionContainer">
+                <h2 class="nombrePlato"></h2>
+                <div class="listaIngredientesContainer">
+                    <h2 class="tituloIngredientes">Ingredientes:</h2>
+                    <ul class="listaIngredientes">
+                    </ul>
+                </div>
+                <div class="recetaContainer">
+                    <h2 class="tituloReceta">Receta:</h2>
+                    <p class="pasoReceta"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+</html>
